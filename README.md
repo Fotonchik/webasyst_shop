@@ -39,10 +39,13 @@ git checkout main
 3. Запуск контейнеров
 
 # Сборка и запуск
-```docker compose up -d --build
+```
+docker compose up -d --build
 ```
 # Проверка статуса
-```docker compose ps```
+```
+docker compose ps
+```
 4. Настройка базы данных
 Откройте в браузере: http://localhost:8001/webasyst/
 
@@ -73,11 +76,15 @@ http://localhost:8001/shop/?plugin=gift4you&action=gift
 ```
 
 Ветки проекта
-```main```
+```
+main
+```
 gift4you, README и docker-compose.
 
 
-```dev```
+```
+dev
+```
 Полная версия Webasyst CRM включая:
 - Shop-Script (магазин)
 - Плагин gift4you
