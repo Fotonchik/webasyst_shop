@@ -4,6 +4,7 @@
 Полнофункциональная CRM система Webasyst с магазином Shop-Script и плагином для розыгрыша подарков.
 
 ## 📁 Структура проекта
+```
 webasyst_shop/
 ├── wa-apps/shop/ # Приложение магазина Shop-Script
 │ └── plugins/gift4you/ # Плагин «Подарок для вас»
@@ -14,7 +15,7 @@ webasyst_shop/
 ├── wa-data/ # Данные приложений
 ├── docker-compose.yml # Конфигурация Docker
 └── README.md # документация
-
+```
 
 
 ### Предварительные требования
