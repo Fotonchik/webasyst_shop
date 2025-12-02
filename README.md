@@ -46,14 +46,15 @@ git checkout main
 4. Настройка базы данных
 Откройте в браузере: http://localhost:8001/webasyst/
 
-Настройка плагина «Подарок для вас»
-После установки Webasyst:
-Включите плагин:
-Админ-панель → Магазин → Настройки → Плагины
-Найдите "Подарок для вас" → Активировать
-Настройте подарки:
-В настройках плагина выберите товары для розыгрыша
-Настройте внешний вид страницы
+- Настройка плагина «Подарок для вас»
+- После установки Webasyst:
+- Включите плагин:
+- Админ-панель → Магазин → Настройки → Плагины
+- Найдите "Подарок для вас" → Активировать
+- Настройте подарки:
+- В настройках плагина выберите товары для розыгрыша
+- Настройте внешний вид страницы
+
 Страница подарка:
 ```text
 http://localhost:8001/webasyst/?plugin=gift4you&action=gift
@@ -64,10 +65,12 @@ http://localhost:8001/webasyst/?plugin=gift4you&action=gift
 http://localhost:8001/shop/?plugin=gift4you&action=gift
 ```
 Доступ к системе
+```
 Главная страница: http://localhost:8001/webasyst/
 Магазин: http://localhost:8001/shop/
 Страница подарков: http://localhost:8001/webasyst/?plugin=gift4you&action=gift
 Админ-панель: http://localhost:8001/webasyst/
+```
 
 Ветки проекта
 ```main```
@@ -76,10 +79,10 @@ gift4you, README и docker-compose.
 
 ```dev```
 Полная версия Webasyst CRM включая:
-Shop-Script (магазин)
-Плагин gift4you
-Приложение IT Services
-Все системные файлы
+- Shop-Script (магазин)
+- Плагин gift4you
+- Приложение IT Services
+- Все системные файлы
 
 
 # Правильные права
@@ -91,14 +94,11 @@ docker compose exec web chmod -R 777 /var/www/html/wa-cache/
 ```
 
 # Технические характеристики
-Web-сервер: Apache 2.4 с PHP 8.2
-База данных: MariaDB 10.5
-PHP расширения: mysqli, pdo, pdo_mysql
+
+- Web-сервер: Apache 2.4 с PHP 8.2
+- База данных: MariaDB 10.5
+- PHP расширения: mysqli, pdo, pdo_mysql
 
 Порты:
-8001 → Web-интерфейс
-3306 → База данных (внутренний)
-bash
-git checkout dev
-git merge main
-git push origin dev
+- 8001 → Web-интерфейс
+- 3306 → База данных (внутренний)
