@@ -1,0 +1,29 @@
+<h1>Подарок для вас — настройки</h1>
+
+<div class="fields form">
+    <form action="?module=plugins&id=gift4you&action=save" method="post" id="plugins-settings-form">
+        {$wa->csrf()}
+
+        <div class="field">
+            <div class="name">
+                ID списка товаров
+            </div>
+            <div class="value">
+                <input type="text" name="shop_gift4you[product_list_id]" value="{$settings.product_list_id|escape}" class="short">
+                <br>
+                <span class="hint">Укажите ID списка товаров, из которого будет выбираться подарок.</span>
+            </div>
+        </div>
+
+        <div class="field">
+            <div class="value submit">
+                <input type="submit" class="button green" value="[s`Сохранить`]">
+                <span id="plugins-settings-form-status" style="display:none"></span>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+

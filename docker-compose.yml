@@ -1,0 +1,29 @@
+
+version: '3.9'
+services:
+  web:
+    image: php:8.2-apache
+    container_name: webasyst-web
+    ports:
+      - '8001:80'
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    depends_on:
+      - db
+    environment:
+      APACHE_DOCUMENT_ROOT: /var/www/html
+    command: >
+      bash -c 'docker-php-ext-install mysqli pdo pdo_mysql &&
+               apachectl -D FOREGROUND'
+  db:
+    image: mariadb:10.5
+    container_name: webasyst-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: webasyst
+      MYSQL_USER: webasyst
+      MYSQL_PASSWORD: webasyst
+    volumes:
+      - db_data:/var/lib/mysql
