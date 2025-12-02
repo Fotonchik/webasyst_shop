@@ -3,7 +3,7 @@
 
 Полнофункциональная CRM система Webasyst с магазином Shop-Script и плагином для розыгрыша подарков.
 
-## 📁 Структура проекта
+## Структура проекта
 ```
 webasyst_shop/
 ├── wa-apps/shop/ # Приложение магазина Shop-Script
@@ -83,10 +83,12 @@ Shop-Script (магазин)
 
 
 # Правильные права
+```
 docker compose exec web chmod -R 755 /var/www/html/
 docker compose exec web chown -R www-data:www-data /var/www/html/
 docker compose exec web chmod -R 777 /var/www/html/wa-data/
 docker compose exec web chmod -R 777 /var/www/html/wa-cache/
+```
 
 # Технические характеристики
 Web-сервер: Apache 2.4 с PHP 8.2
